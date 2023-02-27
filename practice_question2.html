@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function getformvalue(){
+			var x=document.getElementById("price");
+			for(var i=0;i<x.length;i++){
+				if(x.elements[i].value!='submit'){
+					alert(x.elements[i].value)
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<form id="form1" onsubmit="getformvalue()">
+		Electronic Item:<input type="text" name="Ename" value="Mobile"><br>
+		Price:<input id="price" type="number" name="price" value="20000"><br>
+		<input type="checkbox" name="checkbox" onclick="getformvalue()">
+		<input type="submit" name="submit">
+</form>
+
+</body>
+</html>

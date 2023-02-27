@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<script type="text/javascript">
+
+		function c1(){
+			document.getElementById("first").value=" "
+		}
+		function c2(){
+			document.getElementById("second").value=" "
+		}
+		
+
+		function add(){
+			var a=document.getElementById("first").value
+			var b=document.getElementById("second").value
+			document.getElementById("third").value=parseInt(a)+parseInt(b)
+		}
+		function subtract(){
+		var a=document.getElementById("first").value
+		var b=document.getElementById("second").value
+		document.getElementById("third").value=parseInt(a)-parseInt(b)
+		}
+		function multiply(){
+		var a=document.getElementById("first").value
+		var b=document.getElementById("second").value
+		document.getElementById("third").value=parseInt(a)*parseInt(b)
+		}
+		function divide(){
+		var a=document.getElementById("first").value
+		var b=document.getElementById("second").value
+		document.getElementById("third").value=parseInt(a)/parseInt(b)	
+		}
+		function factorial(){
+		var x=document.getElementById("first").value
+		var fact=1;
+		while(x>=1){
+			fact=fact*x;
+			x--;
+		}
+		document.getElementById("third").value=fact;
+			
+		}
+		function concatinate(){
+		var a=document.getElementById("first").value
+		var b=document.getElementById("second").value
+		var c=document.getElementById("third").value
+		alert(a+b)
+
+			
+		}
+
+
+
+
+	</script>
+	<style type="text/css">
+		div{
+			border: 3px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div style= "width:300px;" "height: 100px;">
+	<input type="text" id="first" value="enter a number" onclick="c1()">
+	<br>
+	<input type="text" id="second" value="enter a number" onclick="c2()">
+	<br>
+	<input type="text" id="third" value="output">
+	<br>
+	<input type="button" id="add" value="add" onclick="add()">
+	
+	<input type="button" id="subtract" value="subtract" onclick="subtract()">
+	<br>
+	<input type="button" id="multiply" value="multiply" onclick="multiply()">
+	<br>
+	<input type="button" id="divide" value="divide" onclick="divide()">
+	
+	<input type="button" id="factorial" value="factorial" onclick="factorial()">
+	<br>
+	<input type="button" id="concatinate" value="concatinate" onclick="concatinate()">
+</div>
+
+</body>
+</html>

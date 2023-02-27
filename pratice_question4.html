@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function c1(){
+			var name=document.getElementById("n1").value=" "
+			
+		}
+		function c2(){
+			var age=document.getElementById("a1").value=" "
+			
+		}
+		function c3(){
+			var number=document.getElementById("num1").value=" "
+			
+		}
+		function c4(){
+			var address=document.getElementById("add1").value=" "
+			
+		}
+		function calc(){
+			var name=document.getElementById("n1").value
+			if(name.length<=5){
+				alert("Enter more than 5 characters for name")
+			}
+			var password=document.getElementById("p1").value
+			if(password.length<=8){
+				alert("enter more than 8 characters for password")
+			}
+			var confirm=document.getElementById("p2").value
+			if(confirm!=password){
+				alert("enter the password again")
+			}
+			var age=document.getElementById("a1").value
+			if(age<=24){
+				alert("not eligible")
+			}
+			var number=document.getElementById("num1").value
+			if(number[0]!=9){
+				alert("enter your first number as 9")
+			}
+			var address=document.getElementById("add1").value
+				if(address==""){
+					alert("enter address")
+				}
+			
+
+		 }
+		
+
+	
+		
+	</script>
+	<style type="text/css">
+		form{
+			height:200px ;
+			width:200px ;
+			margin: 10px;
+			padding: 10px;
+
+		}
+		form,input{
+			padding: 5px;
+			margin: 2px;
+		}
+	</style>
+
+</head>
+<body>
+	<form id="f1" method="get">
+	<input type="text" id="n1" value="your name" onclick="c1()"><br>
+	<input type="password" id="p1" value="your password">
+	<input type="password" id="p2" value="confirm"><br>
+	<input type="text" id="a1" value="age" onclick="c2()">
+	<input type="text" id="num1" value="Mobile number" onclick="c3()"><br>
+	<input type="text" id="add1" value="Address" onclick="c4()"><br>
+	<input type="submit" name="Submit" value="Register" onclick="calc()">
+</form>
+
+<!-- methods of form:>get and post in form -->
+
+</body>
+</html>

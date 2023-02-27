@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+<script type="text/javascript">
+	var even=[];
+	var odd=[];
+	var i;
+	var a=parseInt(prompt("enter the number"));
+	
+	
+	while(a!=0){
+		if(a%2==0){
+			even.push(a);
+		}
+		else{
+			odd.push(a);
+		}
+
+		a=parseInt(prompt("enter the  number"))
+	}
+	
+	document.write("even"+"<br>")
+	for( i=0;i<even.length;i++){
+		
+		document.write(even[i]+"<br>");
+	}
+	document.write("odd"+"<br>")
+	for(i=0;i<odd.length;i++){
+		
+		document.write(odd[i]+"<br>");
+	}
+	
+</script>
+
+<body>
+
+</body>
+</html>

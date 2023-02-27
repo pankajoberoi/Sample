@@ -1,0 +1,26 @@
+#div1{
+	background-color: blue;
+	height: 200px;
+	width: 200px;
+}
+#div2{
+	background-color: red;
+	height: 200px;
+	width: 200px;
+	position: sticky;
+	left: 20px;
+	top: 100px;
+
+}
+#div3{
+	background-color: purple;
+	height: 200px;
+	width: 200px;
+}
+#outer-div{
+
+	border: 2px solid;
+	margin: 20px;
+
+	position: relative;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function calc(){
+			var total,vat;
+			var item=document.getElementById("I1").value;
+			var price=parseInt(document.getElementById("p1").value);
+			var qty=parseInt(document.getElementById("q1").value);
+			var c1=document.getElementById("v1").checked;
+			total=price*qty;
+			if(c1){
+				vat=.13*total
+				total=vat+total
+			}
+
+			document.getElementById("a1").innerHTML=item;
+			document.getElementById("a2").innerHTML=qty;
+			document.getElementById("a3").innerHTML=total;
+
+
+		}
+	</script>
+	<style type="text/css">
+		div{
+			height: 200px;
+			width: 200px;
+			border: 2px solid black;
+			padding: 10px;
+			margin:10px;
+		}
+	</style>
+
+</head>
+<body>
+item:	<input type="text" id="I1" ><br>
+price:	<input type="text" id="p1" ><br>
+qty:	<input type="text" id="q1" ><br>
+<input type="checkbox" id="v1">VAT<br>
+<input type="button" id="b1" value="calculate" onclick="calc()"><br>
+
+<div id="d1">
+<h1>Bill</h1>
+item:<p id="a1"></p>
+qty:<p id="a2"></p>
+total:<p id="a3"></p>
+</div>
+</body>
+</html>

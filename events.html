@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		// function myfunction(x){
+		// 	// document.getElementById("p1").style.background="yellow"
+		// 	x.style.background="yellow"
+		// }
+		// function myfunction4(x){
+		// 	// document.getElementById("p1").style.background="red"
+		// 	x.style.background="red"
+		// }
+
+		// function myfunction1(x){
+		// 	x.style.background="blue"
+		// }
+		// function myfunction2(){
+		// 	document.getElementById("demo").innerHTML="you selected some text"
+		// }
+		function preferedbrowser(){
+			var output=document.getElementById("browsers").value
+			alert(output)
+
+		}
+
+	</script>
+</head>
+<body>
+	<!-- enter your name:<input type="text" value="hello world" onblur="myfunction(this)" onfocus="myfunction1(this)" onselect="myfunction2()"> -->
+	<!-- college:<input type="text" value="my college" id="p1" onmouseover="myfunction(this)" onmouseout="myfunction4(this)">
+	<p id="demo"></p> -->
+	<form>
+		choose which browser you prefer:
+		<select id="browsers" onchange="preferedbrowser()">
+			<option value="chrome">Chrome</option>
+			<option value="Internet explorer">Internet explorer</option>
+			<option value="firefox">firefox</option>
+
+		</select>
+	</form>
+</body>
+</html>

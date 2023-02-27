@@ -1,0 +1,88 @@
+main{
+    width: 70%;
+    display: inline-block;
+}
+
+p{
+/*            font-family: sans-serif;*/
+            font-size: 20px;
+
+        }
+
+h1{
+    font-size: 40px;
+/*     font-family: sans-serif;*/
+}
+h1,p{
+    font-family: sans-serif;
+}
+
+/*h4{
+text-transform:uppercase
+}*/
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.cursive{
+    font-family: cursive;
+}
+
+#blog-title:hover{
+    color:orange;
+}
+
+/*li h4{
+    text-transform: uppercase;
+    font-family: cursive;
+}*/
+#site-desc p{
+    color:red;
+
+}
+
+#blog-desc{
+color:green
+}
+
+/*aside*/
+
+.widget{
+    border-top: 4px solid black;
+}
+.widget input{
+    display: block;
+    background-color: #F7F7F7;
+    margin-bottom:15px ;
+    padding: 4px;
+    color:black;
+    font-size: 1.2rem;
+
+
+}
+button[type="submit"]{
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+aside{
+    display: inline-block;
+    width: 21%;
+    vertical-align: top;
+    margin-left: 4%;
+
+
+}
+#parctice:hover{
+/*    border-radius: 50%; its for images*/
+ /*a:link;
+ a:visited;*/
+ background-color: green;
+/* a:active;*/
+}
+/*#blog-title:hover{
+    color:orange;
+}*/
